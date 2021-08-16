@@ -43,7 +43,7 @@ Distance operator"" _km(long double value) {
 	return Distance(value * 1000.0L);
 }
 
-int main(void) {
+int dfefc(void) {
 	Distance n1 = 13_m;//원래같앗으면 Distance n1(13) 혹은 Distance n1=Distance(13) 같은 식이나 이런식으로 간단하게가능
 	Distance n2 = 130_km;
 
