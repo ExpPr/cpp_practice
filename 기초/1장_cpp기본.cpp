@@ -1,12 +1,12 @@
 #include <iostream>;
-using namespace std;//ÀÌ ÄÚµå´Â std::cout °°ÀÌ ¹üÀ§ÁöÁ¤ »ı·«ÀÌ °¡´ÉÇÔ (´Ü std °ü·ÃµÈ °Í ÇÑ¿¡¼­¸¸)
+using namespace std;//ì´ ì½”ë“œëŠ” std::cout ê°™ì´ ë²”ìœ„ì§€ì • ìƒëµì´ ê°€ëŠ¥í•¨ (ë‹¨ std ê´€ë ¨ëœ ê²ƒ í•œì—ì„œë§Œ)
 
 int main(void) {
-	cout << "Hello world\n" << endl;//endl : ¿ø·¡´Â std::endl, ÁÙ¹Ù²Ş + ¹öÆÛºñ¿ì±â (flush) ±â´É.
-	cout << "First line " << flush;// ¹öÆÛ ºñ¿ì³ª ÁÙ¹Ù²ŞÀº ¾ÈÇÔ
+	cout << "Hello world\n" << endl;//endl : ì›ë˜ëŠ” std::endl, ì¤„ë°”ê¿ˆ + ë²„í¼ë¹„ìš°ê¸° (flush) ê¸°ëŠ¥.
+	cout << "First line " << flush;// ë²„í¼ ë¹„ìš°ë‚˜ ì¤„ë°”ê¿ˆì€ ì•ˆí•¨
 	cout << "Second line" << endl;
 
-	int age;//º¯¼öÁöÁ¤
+	int age;//ë³€ìˆ˜ì§€ì •
 	cout << "your age :";
 	cin >> age;
 

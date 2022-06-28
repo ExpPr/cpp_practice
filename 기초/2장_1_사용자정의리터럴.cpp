@@ -1,18 +1,18 @@
 #include <iostream>;
 using namespace std;
 
-//»ç¿ëÀÚ ÁöÁ¤ ¸®ÅÍ·²Àº c++11ºÎÅÍ ÀÌ¿ë°¡´É.
-//ÀÌ´Â ¼ýÀÚ µÚ¿¡ m, kmµîÀ» ºÙ¿© °Å¸®¸¦ Ç¥ÇöÇÏ°Ô ÇÑ´Ù´øÁö, h, minµîÀ» ºÙ¿© ½Ã°£À» Ç¥ÇöÇÏ°Ô ÇÏ´Â °ÍÃ³·³ Æ¯Á¤ Á¢¹Ì»ç¸¦ ¸¸µé ¼ö ÀÖ´Â °Í
-//»êÀÚ ¿À¹ö·ÎµùÀÇ ¹æ½ÄÀ¸·Î ±¸Çö
-//º¸Åë ÀÌ´Â class¿Í °°ÀÌ »ç¿ëÇÔ.
-//´Ü ÀÌ·¸°Ô ¸¸µç ¸®ÅÍ·²Àº ¾ð´õ¹Ù "_"°¡ ÇÊ¼öÀÌ´Ù. ¾øÀÌ´Â »ç¿ë¸øÇÔ.. 
+//ì‚¬ìš©ìž ì§€ì • ë¦¬í„°ëŸ´ì€ c++11ë¶€í„° ì´ìš©ê°€ëŠ¥.
+//ì´ëŠ” ìˆ«ìž ë’¤ì— m, kmë“±ì„ ë¶™ì—¬ ê±°ë¦¬ë¥¼ í‘œí˜„í•˜ê²Œ í•œë‹¤ë˜ì§€, h, minë“±ì„ ë¶™ì—¬ ì‹œê°„ì„ í‘œí˜„í•˜ê²Œ í•˜ëŠ” ê²ƒì²˜ëŸ¼ íŠ¹ì • ì ‘ë¯¸ì‚¬ë¥¼ ë§Œë“¤ ìˆ˜ ìžˆëŠ” ê²ƒ
+//ì‚°ìž ì˜¤ë²„ë¡œë”©ì˜ ë°©ì‹ìœ¼ë¡œ êµ¬í˜„
+//ë³´í†µ ì´ëŠ” classì™€ ê°™ì´ ì‚¬ìš©í•¨.
+//ë‹¨ ì´ë ‡ê²Œ ë§Œë“  ë¦¬í„°ëŸ´ì€ ì–¸ë”ë°” "_"ê°€ í•„ìˆ˜ì´ë‹¤. ì—†ì´ëŠ” ì‚¬ìš©ëª»í•¨.. 
 
-//Å¬·¡½º
+//í´ëž˜ìŠ¤
 class Distance {
 private:
 	int _value;
 public :
-	Distance(int value) {//»ý¼ºÀÚ.
+	Distance(int value) {//ìƒì„±ìž.
 		_value = value;
 	}
 	void m() {
@@ -23,9 +23,9 @@ public :
 	}
 };
 
-//»ç¿ëÁöÁöÁ¤ ¸®ÅÍ·² Çü½Ä
-// <Å¬·¡½º¸í> operator"" <¿øÇÏ´Â Á¢¹Ì»ç. ¾ð´õ¹Ù ÇÊ¼ö>(½Ç¼öÇü or Á¤¼öÇü or ¹®ÀÚÇü)
-// Á¤¼öÇüÀº ¿ÀÁ÷ unsigned long long ½Ç¼öÇüÀº long double ¸¸°¡´É
+//ì‚¬ìš©ì§€ì§€ì • ë¦¬í„°ëŸ´ í˜•ì‹
+// <í´ëž˜ìŠ¤ëª…> operator"" <ì›í•˜ëŠ” ì ‘ë¯¸ì‚¬. ì–¸ë”ë°” í•„ìˆ˜>(ì‹¤ìˆ˜í˜• or ì •ìˆ˜í˜• or ë¬¸ìží˜•)
+// ì •ìˆ˜í˜•ì€ ì˜¤ì§ unsigned long long ì‹¤ìˆ˜í˜•ì€ long double ë§Œê°€ëŠ¥
 
 Distance operator"" _m(unsigned long long value) {
 	return Distance(value);
@@ -44,7 +44,7 @@ Distance operator"" _km(long double value) {
 }
 
 int dfefc(void) {
-	Distance n1 = 13_m;//¿ø·¡°°¾ÑÀ¸¸é Distance n1(13) È¤Àº Distance n1=Distance(13) °°Àº ½ÄÀÌ³ª ÀÌ·±½ÄÀ¸·Î °£´ÜÇÏ°Ô°¡´É
+	Distance n1 = 13_m;//ì›ëž˜ê°™ì•—ìœ¼ë©´ Distance n1(13) í˜¹ì€ Distance n1=Distance(13) ê°™ì€ ì‹ì´ë‚˜ ì´ëŸ°ì‹ìœ¼ë¡œ ê°„ë‹¨í•˜ê²Œê°€ëŠ¥
 	Distance n2 = 130_km;
 
 	n1.m();
